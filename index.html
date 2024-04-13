@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo especifico de Informática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            padding-left: 25%;
+            padding-right: 25%;
+            text-align: left;
+            margin-top: 0;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        #progressbar {
+            width: 100%;
+            height: 40px;
+            background-color: #eeeeeebd;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            /* Certifique-se de que a barra de progresso está sobreposta a outros elementos */
+        }
+
+        #progress {
+            height: 100%;
+            background-color: #4CAF50;
+            width: 0;
+        }
+
+        #progress-text {
+            color: white;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="progressbar">
+        <div id="progress">
+            <div id="progress-text">0%</div>
+        </div>
+    </div>
+
+    <a href="legislacao.html">Conteúdo de Legislação </a>
+
+
+
+    <h1>Programação</h1>
+    <ul>
+        <li><input type="checkbox" id="progCheckbox1" onclick="updateProgressBar('progCheckbox1')"> Métodos para
+            construção de algoritmos.</li>
+        <li><input type="checkbox" id="progCheckbox2" onclick="updateProgressBar('progCheckbox2')"> Paradigmas de
+            Programação.</li>
+        <li><input type="checkbox" id="progCheckbox3" onclick="updateProgressBar('progCheckbox3')"> Linguagens de
+            Programação: Java, Python, C/C++.</li>
+    </ul>
+
+    <h2>Instalação e Manutenção de Computadores</h2>
+    <ul>
+        <li><input type="checkbox" id="imcCheckbox1" onclick="updateProgressBar('imcCheckbox1')"> Fundamentos de
+            hardware de computador.</li>
+        <li><input type="checkbox" id="imcCheckbox2" onclick="updateProgressBar('imcCheckbox2')"> Arquitetura do
+            computador.</li>
+        <li><input type="checkbox" id="imcCheckbox3" onclick="updateProgressBar('imcCheckbox3')"> Softwares de
+            gerenciamento de hardware.</li>
+    </ul>
+
+    <h2>Análise de Sistemas</h2>
+    <ul>
+        <li><input type="checkbox" id="asCheckbox1" onclick="updateProgressBar('asCheckbox1')"> Processos de
+            Desenvolvimento de Software.</li>
+        <li><input type="checkbox" id="asCheckbox2" onclick="updateProgressBar('asCheckbox2')"> Metodologias Ágeis.</li>
+        <li><input type="checkbox" id="asCheckbox3" onclick="updateProgressBar('asCheckbox3')"> Técnicas de Teste de
+            Software.</li>
+        <li><input type="checkbox" id="asCheckbox4" onclick="updateProgressBar('asCheckbox4')"> Requisitos Funcionais e
+            Não-Funcionais.</li>
+        <li><input type="checkbox" id="asCheckbox5" onclick="updateProgressBar('asCheckbox5')"> Documento de Requisitos.
+        </li>
+        <li><input type="checkbox" id="asCheckbox6" onclick="updateProgressBar('asCheckbox6')"> Diagramas da UML
+            aplicados ao Projeto de Software.</li>
+        <li><input type="checkbox" id="asCheckbox7" onclick="updateProgressBar('asCheckbox7')"> Modelagem de Projeto de
+            Software.</li>
+        <li><input type="checkbox" id="asCheckbox8" onclick="updateProgressBar('asCheckbox8')"> Definição de problemas.
+        </li>
+        <li><input type="checkbox" id="asCheckbox9" onclick="updateProgressBar('asCheckbox9')"> Análise de requisitos.
+        </li>
+        <li><input type="checkbox" id="asCheckbox10" onclick="updateProgressBar('asCheckbox10')"> Projeto arquitetural.
+        </li>
+    </ul>
+
+    <h2>Banco de Dados</h2>
+    <ul>
+        <li><input type="checkbox" id="bdCheckbox1" onclick="updateProgressBar('bdCheckbox1')"> Fundamentos de Banco de
+            Dados: Arquitetura e SGBD.</li>
+        <li><input type="checkbox" id="bdCheckbox2" onclick="updateProgressBar('bdCheckbox2')"> Modelo Conceitual.</li>
+        <li><input type="checkbox" id="bdCheckbox3" onclick="updateProgressBar('bdCheckbox3')"> Modelo lógico de dados.
+        </li>
+        <li><input type="checkbox" id="bdCheckbox4" onclick="updateProgressBar('bdCheckbox4')"> Modelo físico.</li>
+        <li><input type="checkbox" id="bdCheckbox5" onclick="updateProgressBar('bdCheckbox5')"> Linguagem de Definição
+            de Dados (DDL).</li>
+        <li><input type="checkbox" id="bdCheckbox6" onclick="updateProgressBar('bdCheckbox6')"> Linguagem de Manipulação
+            de Dados (DML).</li>
+        <li><input type="checkbox" id="bdCheckbox7" onclick="updateProgressBar('bdCheckbox7')"> Linguagem de Seleção de
+            Dados (DQL).</li>
+        <li><input type="checkbox" id="bdCheckbox8" onclick="updateProgressBar('bdCheckbox8')"> Procedimentos
+            armazenados.</li>
+        <li><input type="checkbox" id="bdCheckbox9" onclick="updateProgressBar('bdCheckbox9')"> Gatilhos.</li>
+        <li><input type="checkbox" id="bdCheckbox10" onclick="updateProgressBar('bdCheckbox10')"> Transações.</li>
+        <li><input type="checkbox" id="bdCheckbox11" onclick="updateProgressBar('bdCheckbox11')"> Linguagem de Controle
+            de Dados (DCL).</li>
+        <li><input type="checkbox" id="bdCheckbox12" onclick="updateProgressBar('bdCheckbox12')"> Backup e Recuperação
+            de falhas.</li>
+    </ul>
+
+    <h2>Redes de computadores</h2>
+    <ul>
+        <li><input type="checkbox" id="rcCheckbox1" onclick="updateProgressBar('rcCheckbox1')"> Princípios, meios e
+            equipamentos de transmissão de dados.</li>
+        <li><input type="checkbox" id="rcCheckbox2" onclick="updateProgressBar('rcCheckbox2')"> Topologias de redes e
+            suas abrangências (LANs, MANs e WANs).</li>
+        <li><input type="checkbox" id="rcCheckbox3" onclick="updateProgressBar('rcCheckbox3')"> Arquiteturas, protocolos
+            e serviços de comunicação de redes dos modelos OSI e TCP/IP.</li>
+        <li><input type="checkbox" id="rcCheckbox4" onclick="updateProgressBar('rcCheckbox4')"> Tecnologias de Redes de
+            Computadores cabeadas e sem fio.</li>
+        <li><input type="checkbox" id="rcCheckbox5" onclick="updateProgressBar('rcCheckbox5')"> Endereçamento de redes
+            em IPV4 e IPv6.</li>
+        <li><input type="checkbox" id="rcCheckbox6" onclick="updateProgressBar('rcCheckbox6')"> Dimensionamento dos
+            equipamentos ativos e passivos utilizados na interconexão de redes.</li>
+        <li><input type="checkbox" id="rcCheckbox7" onclick="updateProgressBar('rcCheckbox7')"> Identificação da
+            estrutura, organização e padronização das redes.</li>
+        <li><input type="checkbox" id="rcCheckbox8" onclick="updateProgressBar('rcCheckbox8')"> Princípio de políticas
+            segurança em redes.</li>
+        <li><input type="checkbox" id="rcCheckbox9" onclick="updateProgressBar('rcCheckbox9')"> Aplicações práticas de
+            infraestrutura de redes de computadores e servidores para compartilhamento de conexões e de informações.
+        </li>
+    </ul>
+
+    <h2>Desenvolvimento web</h2>
+    <ul>
+        <li><input type="checkbox" id="dwCheckbox1" onclick="updateProgressBar('dwCheckbox1')"> Fundamentos de sistemas
+            web.</li>
+        <li><input type="checkbox" id="dwCheckbox2" onclick="updateProgressBar('dwCheckbox2')"> Linguagem de Marcação.
+        </li>
+        <li><input type="checkbox" id="dwCheckbox3" onclick="updateProgressBar('dwCheckbox3')"> Conceito de Linguagem de
+            Programação Web Front-end e Back-end.</li>
+        <li><input type="checkbox" id="dwCheckbox4" onclick="updateProgressBar('dwCheckbox4')"> Acesso e interação de
+            página web com banco de dados.</li>
+        <li><input type="checkbox" id="dwCheckbox5" onclick="updateProgressBar('dwCheckbox5')"> Conceito de Design
+            Patterns na programação web.</li>
+        <li><input type="checkbox" id="dwCheckbox6" onclick="updateProgressBar('dwCheckbox6')"> Desenvolvimento de
+            aplicações com Frameworks Frontend e Back-end.</li>
+        <li><input type="checkbox" id="dwCheckbox7" onclick="updateProgressBar('dwCheckbox7')"> Versionamento no
+            desenvolvimento web.</li>
+        <li><input type="checkbox" id="dwCheckbox8" onclick="updateProgressBar('dwCheckbox8')"> Princípios de segurança
+            de sistemas web.</li>
+    </ul>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Recuperar os estados marcados dos checkboxes armazenados no localStorage
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function (checkbox) {
+                var checkboxId = checkbox.id;
+                var isChecked = localStorage.getItem(checkboxId) === "true";
+                checkbox.checked = isChecked;
+            });
+
+            // Atualizar a barra de progresso inicialmente
+            updateProgressBar();
+        });
+
+        function updateProgressBar(checkboxId) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var progress = (checkedCheckboxes.length / checkboxes.length) * 100;
+            document.getElementById('progress').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = progress.toFixed(2) + '%';
+
+
+            // Armazenar o estado marcado no localStorage
+            if (checkboxId) {
+                var checkbox = document.getElementById(checkboxId);
+                localStorage.setItem(checkboxId, checkbox.checked);
+            }
+        }
+    </script>
+</body>
+
+</html>
