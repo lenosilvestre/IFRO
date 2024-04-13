@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legislação e Educação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            padding-left: 25%;
+            padding-right: 25%;
+            text-align: left;
+            margin-top: 0;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        #progressbar {
+            width: 100%;
+            height: 40px;
+            background-color: #eeeeeebd;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            /* Certifique-se de que a barra de progresso está sobreposta a outros elementos */
+        }
+
+        #progress {
+            height: 100%;
+            background-color: #4CAF50;
+            width: 0;
+        }
+
+        #progress-text {
+            color: white;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="progressbar">
+        <div id="progress">
+            <div id="progress-text">0%</div>
+        </div>
+    </div>
+
+    <div id="container">
+
+        <h2>LEGISLAÇÃO</h2>
+        <ul>
+            <li><input type="checkbox" id="legislacaoCheckbox1" onclick="updateProgressBar('legislacaoCheckbox1')">
+                Constituição da República Federativa do Brasil 1988: Título III – Capítulo VII (Da Administração
+                Pública).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox2" onclick="updateProgressBar('legislacaoCheckbox2')">
+                Título VIII – Capítulos III (Da Educação, da Cultura e do Desporto); IV (Da Ciência, Tecnologia e
+                Inovação); V (Da Comunicação Social); VI (Do Meio Ambiente); VII (Da Família, da Criança, do
+                Adolescente, do Jovem e do Idoso); VIII (Dos Índios).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox3" onclick="updateProgressBar('legislacaoCheckbox3')"> Lei
+                nº 8.069/1990 (Estatuto da Criança e do Adolescente): Título I – Das Disposições Preliminares; Título II
+                – Capítulo IV (Do Direito à Educação, à Cultura, ao Esporte e ao Lazer); Capítulo V (Do Direito à
+                Profissionalização e à Proteção no Trabalho).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox4" onclick="updateProgressBar('legislacaoCheckbox4')"> Lei
+                nº 12.852/2013 (Estatuto da Juventude): Título I – Dos Direitos e das Políticas Públicas de Juventude.
+            </li>
+            <li><input type="checkbox" id="legislacaoCheckbox5" onclick="updateProgressBar('legislacaoCheckbox5')"> Lei
+                nº 8.112/1990 (Regime Jurídico dos Servidores Públicos Civis da União, das Autarquias e das Fundações
+                Públicas Federais): Do Provimento, Vacância, Remoção, Redistribuição e Substituição: Título II –
+                Capítulos I (Do Provimento), II (Da Vacância), III (Da Remoção e da Redistribuição); Dos Direitos e
+                Vantagens: Título III – Capítulos I (Do Vencimento e da Remuneração), II (Das Vantagens, Das
+                Indenizações, Das Diárias, Das Gratificações e Adicionais, Da Gratificação Natalina), III (Das Férias);
+                Do Regime Disciplinar: Título IV – Capítulos I (Dos Deveres), II (Das Proibições), III (Da Acumulação),
+                IV (Das Responsabilidades), V (Das Penalidades).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox6" onclick="updateProgressBar('legislacaoCheckbox6')"> Lei
+                nº 8.429/1992 (Lei de Improbidade Administrativa).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox7" onclick="updateProgressBar('legislacaoCheckbox7')">
+                Decreto nº 1.171/1994 (Código de Ética Profissional do Servidor Público Civil do Poder Executivo
+                Federal).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox8" onclick="updateProgressBar('legislacaoCheckbox8')"> Lei
+                nº 9.784/1999 (Regula o processo administrativo no âmbito da Administração Pública Federal).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox9" onclick="updateProgressBar('legislacaoCheckbox9')"> Lei
+                nº 9.394/1996 (Lei de Diretrizes e Bases da Educação Nacional – LDB).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox10" onclick="updateProgressBar('legislacaoCheckbox10')">
+                Lei nº 11.892/2008 (Rede Federal de Educação Profissional, Científica e Tecnológica, cria os Institutos
+                Federais de Educação, Ciência e Tecnologia).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox11" onclick="updateProgressBar('legislacaoCheckbox11')">
+                Lei nº 12.772/2012 (Estruturação do Plano de Carreiras e Cargos de Magistério Federal).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox12" onclick="updateProgressBar('legislacaoCheckbox12')">
+                Lei nº 13.146/2015 (Estatuto da Pessoa com Deficiência).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox13" onclick="updateProgressBar('legislacaoCheckbox13')">
+                Lei nº 12.764/2012 (Política Nacional de Proteção dos Direitos da Pessoa com Transtorno do Espectro
+                Autista).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox14" onclick="updateProgressBar('legislacaoCheckbox14')">
+                Lei nº 13.185/2015 (Programa de Combate à Intimidação Sistemática - Bullying).</li>
+            <li><input type="checkbox" id="legislacaoCheckbox15" onclick="updateProgressBar('legislacaoCheckbox15')">
+                Lei nº 14.811/2024 (Medidas de proteção à criança e ao adolescente contra a violência nos
+                estabelecimentos educacionais ou similares).</li>
+        </ul>
+
+        <h2>DIDÁTICA</h2>
+        <ul>
+            <li><input type="checkbox" id="didaticaCheckbox1" onclick="updateProgressBar('didaticaCheckbox1')">
+                Legislação para o Ensino Médio e Educação Profissional de Nível Técnico.</li>
+            <li><input type="checkbox" id="didaticaCheckbox2" onclick="updateProgressBar('didaticaCheckbox2')">
+                Planejamento escolar (planejamento de ensino, planejamento de sala de aula, etc.) e políticas públicas
+                educacionais: políticas de efetivação e implantação das metas do Plano Nacional de Educação – PNE
+                2014-2024 para o Ensino Médio, Educação de Jovens e Adultos e formação e valorização do profissional da
+                educação.</li>
+            <li><input type="checkbox" id="didaticaCheckbox3" onclick="updateProgressBar('didaticaCheckbox3')">
+                Diretrizes Curriculares Nacionais para o Ensino Médio e Educação Profissional de Nível Técnico, da
+                Educação de Jovens e Adultos e da Educação Profissional Tecnológica.</li>
+            <li><input type="checkbox" id="didaticaCheckbox4" onclick="updateProgressBar('didaticaCheckbox4')">
+                Tendências educacionais na sala de aula: correntes teóricas e alternativas metodológicas.</li>
+            <li><input type="checkbox" id="didaticaCheckbox5" onclick="updateProgressBar('didaticaCheckbox5')">
+                Tendências Pedagógicas.</li>
+            <li><input type="checkbox" id="didaticaCheckbox6" onclick="updateProgressBar('didaticaCheckbox6')">
+                Pressupostos teóricos para o Ensino Médio, Educação Profissional de Nível Técnico, da Educação de Jovens
+                e Adultos e da Educação Profissional Tecnológica.</li>
+            <li><input type="checkbox" id="didaticaCheckbox7" onclick="updateProgressBar('didaticaCheckbox7')">
+                Concepções de Educação e Escola.</li>
+            <li><input type="checkbox" id="didaticaCheckbox8" onclick="updateProgressBar('didaticaCheckbox8')">
+                Avaliação Educacional: concepções, tipos e funções (avaliação institucional e avaliação da
+                aprendizagem).</li>
+            <li><input type="checkbox" id="didaticaCheckbox9" onclick="updateProgressBar('didaticaCheckbox9')"> Função
+                social do ensino e a concepção sobre os processos de aprendizagem: instrumentos de análise.</li>
+            <li><input type="checkbox" id="didaticaCheckbox10" onclick="updateProgressBar('didaticaCheckbox10')"> As
+                mudanças no mundo do trabalho e a educação.</li>
+            <li><input type="checkbox" id="didaticaCheckbox11" onclick="updateProgressBar('didaticaCheckbox11')"> Os
+                elementos do trabalho pedagógico: ensino por competências, objetivos, conteúdos segundo sua tipologia e
+                organização, metodologias de ensino e avaliação da aprendizagem (na perspectiva reguladora).</li>
+            <li><input type="checkbox" id="didaticaCheckbox12" onclick="updateProgressBar('didaticaCheckbox12')"> Bases
+                Psicológicas da aprendizagem e do desenvolvimento: conceito, correntes teóricas.</li>
+            <li><input type="checkbox" id="didaticaCheckbox13" onclick="updateProgressBar('didaticaCheckbox13')"> A
+                multidimensionalidade do processo ensino e aprendizagem.</li>
+            <li><input type="checkbox" id="didaticaCheckbox14" onclick="updateProgressBar('didaticaCheckbox14')"> A
+                interdisciplinaridade no processo de ensinar a aprender.</li>
+            <li><input type="checkbox" id="didaticaCheckbox15" onclick="updateProgressBar('didaticaCheckbox15')">
+                Construção e a visão interdisciplinar e transversal do conhecimento: papel do educador, do educando e da
+                sociedade.</li>
+            <li><input type="checkbox" id="didaticaCheckbox16" onclick="updateProgressBar('didaticaCheckbox16')"> Gestão
+                escolar democrática e participativa: novos desafios para a gestão.</li>
+            <li><input type="checkbox" id="didaticaCheckbox17" onclick="updateProgressBar('didaticaCheckbox17')"> O
+                Projeto Político-Pedagógico da Escola: concepção, princípios e eixos norteadores.</li>
+            <li><input type="checkbox" id="didaticaCheckbox18" onclick="updateProgressBar('didaticaCheckbox18')">
+                Políticas de Educação Especial e Inclusão escolar.</li>
+            <li><input type="checkbox" id="didaticaCheckbox19" onclick="updateProgressBar('didaticaCheckbox19')">
+                Educação Étnico-racial e políticas de ações afirmativas para a educação étnico-racial.</li>
+        </ul>
+
+
+
+
+
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Recuperar os estados marcados dos checkboxes armazenados no localStorage
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function (checkbox) {
+                var checkboxId = checkbox.id;
+                var isChecked = localStorage.getItem(checkboxId) === "true";
+                checkbox.checked = isChecked;
+            });
+
+            // Atualizar a barra de progresso inicialmente
+            updateProgressBar();
+        });
+
+        function updateProgressBar(checkboxId) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var progress = (checkedCheckboxes.length / checkboxes.length) * 100;
+            document.getElementById('progress').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = progress.toFixed(2) + '%';
+
+            // Armazenar o estado marcado no localStorage
+            if (checkboxId) {
+                var checkbox = document.getElementById(checkboxId);
+                localStorage.setItem(checkboxId, checkbox.checked);
+            }
+        }
+    </script>
+</body>
+
+</html>
