@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecimentos Comuns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            padding-left: 25%;
+            padding-right: 25%;
+            text-align: left;
+            margin-top: 0;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        #progressbar {
+            width: 100%;
+            height: 40px;
+            background-color: #eeeeeebd;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            /* Certifique-se de que a barra de progresso está sobreposta a outros elementos */
+        }
+
+        #progress {
+            height: 100%;
+            background-color: #4CAF50;
+            width: 0;
+        }
+
+        #progress-text {
+            color: white;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="progressbar">
+        <div id="progress">
+            <div id="progress-text">0%</div>
+        </div>
+    </div>
+
+    <div id="container">
+        <a href="index.html">Página inicial </a>
+        <a href="legislacao.html">Conteúdo de Legislação </a>
+        <br>
+        <h2>CONHECIMENTOS COMUNS</h2>
+
+        <h2>LÍNGUA PORTUGUESA</h2>
+        <ul>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox1"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox1')"> Compreensão e interpretação de textos de
+                gêneros variados.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox2"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox2')"> Reconhecimento de tipos e gêneros
+                textuais.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox3"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox3')"> Domínio da ortografia oficial.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox4"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox4')"> Emprego da acentuação gráfica.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox5"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox5')"> Domínio dos mecanismos de coesão textual.
+            </li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox6"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox6')"> Emprego de elementos de referenciação,
+                substituição e repetição, de conectores e outros elementos de sequenciação textual.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox7"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox7')"> Emprego/correlação de tempos e modos
+                verbais.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox8"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox8')"> Domínio da estrutura morfossintática do
+                período.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox9"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox9')"> Relações de coordenação entre orações e
+                entre termos da oração.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox10"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox10')"> Relações de subordinação entre orações e
+                entre termos da oração.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox11"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox11')"> Emprego dos sinais de pontuação.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox12"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox12')"> Concordância verbal e nominal.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox13"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox13')"> Emprego do sinal indicativo de crase.
+            </li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox14"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox14')"> Colocação dos pronomes átonos.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox15"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox15')"> Reescritura de frases e parágrafos do
+                texto.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox16"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox16')"> Substituição de palavras ou de trechos de
+                texto.</li>
+            <li><input type="checkbox" id="linguaPortuguesaCheckbox17"
+                    onclick="updateProgressBar('linguaPortuguesaCheckbox17')"> Análise do Discurso: pressupostos,
+                subentendidos e implícitos.</li>
+        </ul>
+
+        <h2>INFORMÁTICA</h2>
+        <ul>
+            <li><input type="checkbox" id="informaticaCheckbox1" onclick="updateProgressBar('informaticaCheckbox1')">
+                Sistema Operacional Windows 10.</li>
+            <li><input type="checkbox" id="informaticaCheckbox2" onclick="updateProgressBar('informaticaCheckbox2')">
+                Conhecimento sobre o Pacote Microsoft Office 2016 (Word, Excel, PowerPoint).</li>
+            <li><input type="checkbox" id="informaticaCheckbox3" onclick="updateProgressBar('informaticaCheckbox3')">
+                Office 365 Online.</li>
+            <li><input type="checkbox" id="informaticaCheckbox4" onclick="updateProgressBar('informaticaCheckbox4')">
+                Ferramentas do GSuite (Gmail, Drive, Documentos, Planilhas, Apresentações, Formulários, Classroom, Meet,
+                Agenda).</li>
+            <li><input type="checkbox" id="informaticaCheckbox5" onclick="updateProgressBar('informaticaCheckbox5')">
+                Ambiente Virtual de Aprendizagem Moodle.</li>
+            <li><input type="checkbox" id="informaticaCheckbox6" onclick="updateProgressBar('informaticaCheckbox6')">
+                Internet.</li>
+            <li><input type="checkbox" id="informaticaCheckbox7" onclick="updateProgressBar('informaticaCheckbox7')">
+                Antivírus.</li>
+            <li><input type="checkbox" id="informaticaCheckbox8" onclick="updateProgressBar('informaticaCheckbox8')">
+                Redes de Computadores e a Internet.</li>
+            <li><input type="checkbox" id="informaticaCheckbox9" onclick="updateProgressBar('informaticaCheckbox9')">
+                Conexões de Redes Wireless.</li>
+            <li><input type="checkbox" id="informaticaCheckbox10" onclick="updateProgressBar('informaticaCheckbox10')">
+                Hardware: Componentes de microcomputadores; Nomenclatura e função dos hardwares do computador.</li>
+        </ul>
+
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Recuperar os estados marcados dos checkboxes armazenados no localStorage
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function (checkbox) {
+                var checkboxId = checkbox.id;
+                var isChecked = localStorage.getItem(checkboxId) === "true";
+                checkbox.checked = isChecked;
+            });
+
+            // Atualizar a barra de progresso inicialmente
+            updateProgressBar();
+        });
+
+        function updateProgressBar(checkboxId) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var progress = (checkedCheckboxes.length / checkboxes.length) * 100;
+            document.getElementById('progress').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = progress.toFixed(2) + '%';
+
+            // Armazenar o estado marcado no localStorage
+            if (checkboxId) {
+                var checkbox = document.getElementById(checkboxId);
+                localStorage.setItem(checkboxId, checkbox.checked);
+            }
+        }
+    </script>
+</body>
+
+</html>
